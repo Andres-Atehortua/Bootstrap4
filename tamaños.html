@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/tamaños.css" />
+
+    <title>Primer Grid</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Holaaaaaaa</h1>
+      <div class="row">
+        <!-- Bootstrap nos permite darle diferente tamaño a las columnas -->
+        <!-- Por ejemplo col-5 indica que para un dispositivo con un acho menor a 576 pixeles, la columna debe
+        ocupar 5 espacios -->
+        <!-- Otro ejemplo con col-sm-3  indica que para un dispositivo  con un ancho mayor o igual a 
+        576 pixeles la columna debe ocupar 3 espacios-->
+
+        <!--Extra small .col-<1-12> <576px-->
+        <div class="col-12 ">Col 12</div>
+        <!-- Small .col-sm-<1-12> >=576px-->
+        <div class="col-12 col-sm-6">Col 6 -12</div>
+        <!-- Medium .col-md-<1-12> >= 768px -->
+        <div class="col-12 col-md-6">Col 6 -12</div>
+        <!-- Large .col-lg-<1-12> >= 992px -->
+        <div class="col-12 col-lg-6">Col 6 - 12</div>
+        <!-- Extra large .col-xl-<1-12> >= 1200px -->
+        <div class="col-12 col-xl-12">Col 12</div>
+      </div>
+
+      <!-- Si no especificamos tamaño en la columna y solo ponemos col, éstas se ajustará. automáticamente
+      dándole a cada una el espacio equivalente que le corresponda -->
+   <div class="row">
+     <div class="col">Columna auto</div>
+     <div class="col">Columna auto 2</div>
+     
+   </div>
+   <div class="row">
+     <div class="col-12 col-sm-8 col-md-6">Columna1</div>
+     <div class="col-12 col-sm-4 col-md-6">Columna2</div>
+     <div class="col col-sm-12 col-md-12">Columna3</div>
+
+
+   </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
