@@ -10,12 +10,33 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/primerGrid.css" />
+    <link rel="stylesheet" href="./css/offset.css" />
 
-    <title>Plantilla para empezar a trabajar</title>
+    <title>Offset</title>
   </head>
   <body>
-    <!-- jQuery primero, luego Popper.js, por último Bootstrap JS -->
+    <!-- Con la clase offset-<1-12> podemos utilizar los espacios que no se usan para mover o distribuir
+      el resto de columnas como queramos -->
+    <!-- También podemos usar los tamaños de sm, md, lg, xl en los offsets para establecerlos según
+      los pixeles del dispositivo -->
+    <div class="container">
+      <div class="row">
+        <div class="offset-4 col-4 columna">
+          Columna de cuatro espacios
+        </div>
+      </div>
+      <!-- En esta row queremos colocar las columnas en ambos extremos por lo que en la segunda columa
+      utilizamos el offset para desplazarla 4 espacios-->
+      <div class="row">
+        <div class=" col-4 columna">
+          Columna de cuatro espacios
+        </div>
+        <div class="offset-sm-2 offset-md-3 offset-lg-4 col-4 columna">
+          Columna de cuatro espacios
+        </div>
+      </div>
+    </div>
+    <!-- jQuery primero, después Popper.js, por último Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
