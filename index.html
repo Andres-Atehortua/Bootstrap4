@@ -4,18 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Importación CDN de los estilos de bootstrap -->
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Bootstrap</title>
   </head>
   <body>
+    <!--Creamos un contenedor el cual proporciona márgenes, puede ser container (no abarca el 100% de la pantalla)
+       o container fluid (abarca el 100% de la pantalla).-->
+    <h1 class="text-center">Grid</h1>
     <div class="container">
-      <!--Creamos un contenedor el cual proporciona márgenes.-->
-      <h1>Hola mundo</h1>
+      <!--Esto es una fila horizontal la cual debe llevar dentro columnas.-->
+      <div class="row">
+        <!-- Columnas con distinto tamaño -->
+        <div class="col-3 red ">Columnaa1</div>
+        <!--Si no especificamos tamaño (md, sm. lg...) siempre va a tener el mismo que se asigne-->
+        <div class="col-7 blue">Columna2</div>
+        <div class="col-md-2 yellow">Columna3</div>
+      </div>
+      <idv class="row text-center">
+        <!-- Una sola columna sin definir tamaño abarca todo el espacio -->
+        <div class="col pink">Columna3</div>
+      </idv>
+      <div class="row text-center">
+        <!-- Hasta 12 columnas, si hay más hará un salto de linea -->
+        <div class="col-md-1 red">Columna1</div>
+        <div class="col-md-1 blue">Columna2</div>
+        <div class="col-md-1 yellow">Columna3</div>
+        <div class="col-md-1 red">Columna4</div>
+        <div class="col-md-1 blue">Columna5</div>
+        <div class="col-md-1 yellow">Columna6</div>
+        <div class="col-md-1 red">Columna7</div>
+        <div class="col-md-1 blue">Columna8</div>
+        <div class="col-md-1 yellow">columna9</div>
+        <div class="col-md-1 red">columna10</div>
+        <div class="col-md-1 blue">columna11</div>
+        <div class="col-md-1 yellow">columna12</div>
+        <div class="col-md-1 yellow">columna13</div>
+      </div>
     </div>
 
     <!-- Importación de los scripts necesarios con los que trabaja bootstrap colocados
