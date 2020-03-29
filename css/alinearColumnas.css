@@ -1,0 +1,10 @@
+.columna {
+    background-color: cyan;
+    border: 1px solid black;
+}
+
+.fila {
+    background-color: rgb(17, 0, 255);
+    margin: 20px 0;
+    height: 100px;
+}
