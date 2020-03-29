@@ -26,7 +26,19 @@
     <!-- En ambos casos si solo queremos aplicar uno u otro a un lado concreto utilizariamos 
       m o p seguido de l para izquierda, r para derecha, t para arriba, b para abajo, x para eje horizontal (izquierda y derecha),
     y para eje vertical(arriba y abajo). Por ejemplo: mt-5 apicaría margen solo al top (arriba) y py-5 aplicaría padding a top y bottom -->
-
+    <div class="container">
+      <div class="row">
+        <!-- Otra forma de usar los márgenes puede ser para centrar un elemento. Se usaría mx-auto -->
+        <div class="col-sm-2 mx-auto columna">Centrado :)</div>
+      </div>
+      <!-- Estas clases también pueden ser usadas junto a las clases de tamaños para que solo se ejecuten
+    dependiendo de los pixeles del dispositivo -->
+      <div class="row">
+        <div class="col-6 mx-md-auto columna">
+          Centrado dependiendo del tamaño
+        </div>
+      </div>
+    </div>
     <!-- jQuery primero, luego Popper.js, por último Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
