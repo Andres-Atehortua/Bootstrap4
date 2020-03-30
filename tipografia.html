@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Tipografía</title>
+  </head>
+  <body>
+    <!-- En bootstrap se puede aplicar clases de 'h' a párrafos -->
+    <p class="h1">Párrafo con clase de h1</p>
+    <p class="h2">Párrafo con clase de h2</p>
+    <p class="h3">Párrafo con clase de h3</p>
+    <p class="h4">Párrafo con clase de h4</p>
+    <p class="h5">Párrafo con clase de h5</p>
+    <p class="h6">Párrafo con clase de h6</p>
+    <hr />
+
+    <!-- La clase text-muted nos proporciona un texto grisáceo -->
+    <small class="text-muted">Texto más pequeño y grisáceo</small>
+    <hr />
+    <!-- Con la clase display-<1-4> obtenemos una tipografía con un font-weight menor y un font-size
+      variable para los 'h', aunque sirve tambien para los 'p'  -->
+    <h1>H1 normal</h1>
+    <h1 class="display-1">Display 1</h1>
+    <h2 class="display-2">Display 2</h2>
+    <h3 class="display-3">Display 3</h3>
+    <h4 class="display-4">Display 4</h4>
+    <hr />
+    <!-- La clase lead nos proporciona un párrafo con un font-size mayor al normal  -->
+    <p>Hola soy un párrafo normal</p>
+    <p class="lead">Hola soy un párrafo con lead</p>
+    <hr />
+    <!-- En bootstrap tenemos las clases de mark y  small que representan lo mismo que las etiquetas pero
+    sin la connotación semántica que conllevan. -->
+    <p class="mark">párrafo realzado con mark</p>
+    <p class="small">Párrafo más pequeño con small</p>
+    <hr />
+    <!-- En las abreviaturas podemos usar la clase de initialism para tener un font-size ligeramente
+    más pequeño -->
+    <p><abbr title="attribute">attr</abbr></p>
+    <p>
+      <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+    </p>
+    <!-- Con la clase blockquote obtenemos los estilos de una cita -->
+    <blockquote class="text-center">Cita1</blockquote>
+    <blockquote class="blockquote">Cita2</blockquote>
+
+    <!-- Además también tenemos la clase blockquote-footer para nombrar una fuente, además
+    para alinear el texto hacia el centro usamos la clase text-center, text-right para alienarlo al final 
+  o derecha o text-left para alinear a la izquierda o al principio -->
+
+    <blockquote class="blockquote text-right">
+      <p class="mb-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+        erat a ante.
+      </p>
+      <footer class="blockquote-footer text-left ">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </footer>
+    </blockquote>
+    <hr />
+    <!-- Para las listas que no queremos que tengan estilo existe la clase list-unstyled la cual se la
+    aplicaremos a la ul u ol -->
+    <ul class="list-unstyled">
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+    </ul>
+    <!-- Y para las listas que queremos visualizar en linea utilizaremos la clase list-inline para la ul u ol
+    y la lase list-inline-item para cada uno de los li -->
+    <ul class="list-inline">
+      <li class="list-inline-item">Item1</li>
+      <li class="list-inline-item">Item2</li>
+      <li class="list-inline-item">Item3</li>
+    </ul>
+    <!-- jQuery primero, luego Popper.js, por último Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
