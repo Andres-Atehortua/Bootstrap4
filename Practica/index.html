@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Práctica 1</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 bg-primary p-5">
+            <h1 class="text-white text-center">Diseño web Bootstrap</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-12 col-md-8">
+            <div class="row">
+              <!-- Con la clase border conseguimos un borde de un tono grisáceo. Podemos especificar
+              dónde queremos el borde: top - arriba, bottom - abajo, right - derecha, left - izquierda  -->
+              <div class="col-12 col-md-6 border-bottom">
+                <!-- La clase img-fluid es una clase de bootstrap que nos sirve para que una imagen se adapte
+                al contenedor padre -->
+                <img
+                  src="./css/img/4-min.png"
+                  class="img-fluid"
+                  alt="Paisaje"
+                />
+                <h3 class="pt-2 text-secondary">Lorem, ipsum.</h3>
+                <!-- Con la clase text-justify conseguimos que el texto abarque todo el ancho del contenedor
+                 -->
+                <p class="pt-3 text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, molestias voluptas perspiciatis officiis iusto
+                  assumenda obcaecati, hic provident quos quis earum. Atque
+                  rerum et omnis reiciendis quae illo!
+                </p>
+              </div>
+              <div class="col-12 col-md-6 pt-3 pt-md-0 border-bottom">
+                <!-- La clase img-fluid es una clase de bootstrap que nos sirve para que una imagen se adapte
+                al contenedor padre -->
+                <img
+                  src="./css/img/3-min.png"
+                  class="img-fluid"
+                  alt="Paisaje"
+                />
+                <h3 class="pt-2 text-secondary">Lorem, ipsum.</h3>
+                <!-- Con la clase text-justify conseguimos que el texto abarque todo el ancho del contenedor
+                 -->
+                <p class="pt-3 text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, molestias voluptas perspiciatis officiis iusto
+                  assumenda obcaecati, hic provident quos quis earum. Atque
+                  rerum et omnis reiciendis quae illo!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Con la clase 'd' podemos mostrar un elemento según queramos -->
+          <aside class="d-none d-md-block col-md-4 bg-secondary py-4">
+            <h4 class="p-3 text-white text-center">PUBLICIDAD</h4>
+            <div class="bg-light p-1">
+              <img src="./css/img/ad1 (1).png" class="img-fluid" alt="City" />
+              <a class="text-center " href="#">
+                <p class="text-success mt-3 h4">Visitar publicidad</p>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row bg-dark p-4">
+          <div class="col-12">
+            <p class="h5 text-center text-white">
+              Diseño web - Todos los derechos reservados
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery primero, luego Popper.js, por último Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
