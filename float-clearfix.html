@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./css/primerGrid.css" /> -->
+
+    <title>Float y clearfix</title>
+  </head>
+  <body>
+    <!-- Podemos usar la clase de float para 'flotar elementos'. Podemos usar tres tipos de float
+    float-right para la derecha , float-left para la izquierda y float-none para eliminar esta propiedad -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="p-3 bg-secondary float-right">float right</div>
+          <div class="p-3 bg-secondary float-left">float left</div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <div class="p-3 bg-success w-25 float-none">
+            sin float
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <div class="float-sm-right bg-success">
+            flotar a la derecha cuando es mayor o igual a sm
+          </div>
+          <br />
+          <div class="float-md-right bg-success">
+            flotar a la derecha cuando es mayor o igual a md
+          </div>
+          <br />
+          <div class="float-lg-right bg-success">
+            flotar a la derecha cuando es mayor o igual a lg
+          </div>
+          <br />
+          <div class="float-xl-right bg-success">
+            flotar a la derecha cuando es mayor o igual a xl
+          </div>
+          <br />
+        </div>
+        <div class="col-12 mt-5">
+          <!-- Al estar los elementos flotados se entiene que el contenedor con la clase bg-dark no tiene
+          contenido por lo que no se ve el color de fondo. Para solucionar esto usamos la clase clearfix -->
+          <div class="bg-info clearfix">
+            <p class="float-left bg-light p-3">Flotado a la izquierda</p>
+            <p class="float-right bg-light p-3">Flotado a la derecha</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery primero, luego Popper.js, por último Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
