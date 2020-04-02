@@ -11,29 +11,27 @@
       crossorigin="anonymous"
     />
 
-    <title>Tipos de display</title>
+    <title>Plantilla para empezar a trabajar</title>
   </head>
   <body>
-    <!-- La clase para modificar el display en bootstrap es d-<valor>
-      el valor puede ser: none, inline, inline-block, block, table, table-cell, table-row, flex, inline-flex
-    y tambien admite los tamaños de break de bootstrap siendo d-<tamaño de break>-<valor> 
-      por ejemplo: d-md-block -->
-
+    <!-- Para los videos, bootstrap tiene diferentes clases para manipular el tamaño del iframe de forma
+    responsive para empezar el contenedor padre del iframe debe llevar primero la clase embed-responsive
+  y embed-responsive-16by9 que es el tamaño que se le suele dar a los videos aunque existen distintos tamaños:
+   embed-responsive-21by9, embed-responsive-16by9, embed-responsive-4by3, embed-responsive-1by1
+  
+  Después el iframe debe llevar
+la clase de embed-responsive-item para que tanto el iframe como el contenedor padre se adapten al dispositivo. -->
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="d-inline p-2 bg-success h2">d-inline</div>
-          <div class="d-inline p-2 bg-success h2">d-inline</div>
-          <hr />
-          <span class="d-block p2 bg-secondary h2">d-block</span>
-          <span class="d-block p2 bg-secondary h2">d-block</span>
-          <hr />
-          <!-- Mostrando un elemento dependiendo del dispositivo o breakpoint -->
-          <div class="d-none d-sm-inline d-md-block p-2 bg-info">
-            distintos tamaños
-          </div>
-          <div class="d-none d-sm-inline d-md-block p-2 bg-warning">
-            distintos tamaños
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/l3b2nC8Jddg"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
