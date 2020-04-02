@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Textos</title>
+  </head>
+  <body>
+    <!-- Con las clases de bootstrap podemos manejar diferentes aspectos de los textos. -->
+    <!-- Con text-justify justificamos el texto, es decir, el texto se adapta a todo el ancho del contenedor.
+    Además con la clase lead conseguimos que el font size sea algo mayor. -->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 bg-light p-3 ">
+          <h2 class="text-center">Texto justificado</h2>
+          <p class=" m-0 my-3 lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim
+            reiciendis quos dolor fuga molestiae dolorem temporibus nemo ducimus
+            harum veritatis quidem deleniti ad nihil, cumque ipsam! Ea, impedit
+            praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Laudantium magnam neque veritatis sequi! Mollitia molestiae
+            aspernatur, ducimus sint deleniti et repellendus in odio non
+            excepturi, voluptatibus reiciendis, enim suscipit labore.
+          </p>
+          <!-- Si queremos centrar el texto podemos usar text-center para centro, text-right
+          para mandarlo a la derecha y text-left para mandarlo a la izquierda. Estas clases pueden
+          ser usadas con los breakpoint de bootstrap -->
+          <h2 class="text-center">Texto centrado</h2>
+          <p
+            class=" m-0 my-3 lead text-sm-left text-md-right text-lg-left text-xl-center"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <h2 class="text-center">Wrap</h2>
+          <!-- Si tenemos texto en un contenedor que es muy pequeño, podemos usar la clase text-wrap
+          para evitar que el texto se salga de su contenedor. -->
+
+          <div class="bg-warning lead p-2 m-0 text-wrap " style="width: 70px;">
+            Este texto está dentro
+          </div>
+          <div
+            class="bg-warning lead p-2 mt-2 text-nowrap"
+            style="width: 70px;"
+          >
+            Este texto sobresale del contenedor
+          </div>
+          <h2 class="text-center">Truncar texto</h2>
+          <!-- Cuando tenemos un texto muy largo y solo quermos que se vea hasta el ancho del contenedor
+          podemos usar text-truncate para esto. Podría servir para añadir posteriormente un botón de 
+         'ver más' y que despliegue el resto del texto. -->
+          <div class=" bg-secondary mt-5 text-truncate" style=" width: 100px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+            maiores. Culpa magni alias veritatis numquam.
+          </div>
+          <h2 class="text-center">Break</h2>
+          <!-- Si tenemos una palabra que es muy larga, por lo general desbordará el contenedor.
+          Para que esto no ocurra y la palabra se rompa cuando vaya a desbordar usamos la clase
+          text-break -->
+          <div
+            class="col-2 bg-secondary mt-5 text-break "
+            style="width: 150px;"
+          >
+            mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          </div>
+          <h2 class="text-center">Modificación del texto</h2>
+          <!-- Para modificar el texto podemos usar las clases de text-uppercase para poner todo
+          en mayúscula, text-lowercase para poner todo en minúscula y text-capitalize para poner
+          solo las primeras letras de cada palabra en mayúscula -->
+          <p class="text-uppercase lead">texto todo en mayúscula</p>
+          <p class="text-lowercase lead">TEXTO TODO EN MINÚSCULA</p>
+          <p class="text-capitalize lead">
+            texto con las primeras letras mayúscula
+          </p>
+          <h2 class="text-center">Cambiar aspecto del texto</h2>
+          <!-- Tenemos varias clases para modificar el font de un texto
+          font-weiht-bold, font-weiht-bolder, font-weiht-normal, font-weiht-light, font-weiht-lighter -->
+          <p class="font-weight-bold lead">Font weight bold</p>
+          <p class="font-weight-bolder lead">Font weight bolder</p>
+          <p class="font-weight-normal lead">Font weight normal</p>
+          <p class="font-weight-light lead">Font weight light</p>
+          <p class="font-weight-lighter lead">Font weight lighter</p>
+          <!-- Además tenemos la clase de  font-italic para poner el texto en itálica -->
+          <p class="font-italic lead">Texto en itálica</p>
+          <!-- También tenemos la clase de text-muted para obtener un texto grisáceo -->
+          <p class="text-muted lead">Texto grisáceo</p>
+          <p class="text-monospace lead">Texto en monospace</p>
+          <h2 class="text-center">Quitar decoración</h2>
+          <!-- Si queremos quitar decoración por ejemplo el subrayado de un enlace usamos la clase
+            text-decoration-none -->
+          <a href="#" class="text-decoration-none lead"
+            >Enlace sin decoración al hacer hover</a
+          >
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery primero, luego Popper.js, por último Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
